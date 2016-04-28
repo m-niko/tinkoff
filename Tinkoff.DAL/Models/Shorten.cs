@@ -15,11 +15,11 @@ namespace Tinkoff.DAL.Models
         public int TotalClicks { get; private set; }
 
         protected Shorten() { }
-        public Shorten(string rawUrl)
+        public Shorten(IShortedUrlGenerator shortedUrlGenerator, string rawUrl)
         {
             Validate.NotNullOrEmpty(rawUrl);
             RawUrl = rawUrl;
-            Url = new UriBuilder(rawUrl).Uri.ToString();
+            Url = shortedUrlGenerator.GenerateShortedUrl(rawUrl);
             ShortedUrl = string.Format("{0:X}", rawUrl.GetHashCode());
             CreateDate = DateTime.Now;
             TotalClicks = 0;

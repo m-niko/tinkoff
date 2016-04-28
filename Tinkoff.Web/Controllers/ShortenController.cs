@@ -34,7 +34,7 @@ namespace Tinkoff.Web.Controllers
             var newShorten = await shortenRepository.GetShortenByRawUrlAsync(rawUrl);
             if (newShorten == null)
             {
-                newShorten = new Shorten(rawUrl);
+                newShorten = new Shorten(new DefaultShortedUrlGenerator(), rawUrl);
                 await shortenRepository.SaveAsync(newShorten);
             }
             return newShorten;

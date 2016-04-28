@@ -60,6 +60,8 @@
       <DependentUpon>201604280954196_Init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\DefaultShortedUrlGenerator.cs" />
+    <Compile Include="Models\IShortedUrlGenerator.cs" />
     <Compile Include="ShortenDbContext.cs" />
     <Compile Include="Infrastructure\Validate.cs" />
     <Compile Include="Models\IShortenRepository.cs" />

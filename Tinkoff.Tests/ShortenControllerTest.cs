@@ -19,11 +19,12 @@ namespace Tinkoff.Tests
         [TestInitialize]
         public void SetUp()
         {
+            var generator = new DefaultShortedUrlGenerator();
             var shortens = new List<Shorten>
             {
-                new Shorten("microsoft.com"),
-                new Shorten("lenta.ru"),
-                new Shorten("habrahabr.ru")
+                new Shorten(generator, "microsoft.com"),
+                new Shorten(generator, "lenta.ru"),
+                new Shorten(generator, "habrahabr.ru")
             };
             
             shortenRepositoryMock.Setup(s => s.GetShortenUrlsAsync(It.IsAny<string[]>()))

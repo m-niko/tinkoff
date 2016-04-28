@@ -11,7 +11,7 @@ namespace Tinkoff.Tests
         public void CreateShortenIsCorrect()
         {
             var rawUrl = "microsoft";
-            var shorted = new Shorten(rawUrl);
+            var shorted = new Shorten(new DefaultShortedUrlGenerator(),  rawUrl);
 
             Assert.IsNotNull(shorted);
             Assert.AreEqual(rawUrl, shorted.RawUrl);
@@ -23,14 +23,14 @@ namespace Tinkoff.Tests
         public void CreateShortenWhitEmptyRawUrlThrowException()
         {
             var rawUrl = "";
-            var shorted = new Shorten(rawUrl);
+            var shorted = new Shorten(new DefaultShortedUrlGenerator(),  rawUrl);
         }
 
         [TestMethod]
         public void ShortenIncreaseClickCountIsCorrect()
         {
             var rawUrl = "http://microsoft.com/ru/help";
-            var shorted = new Shorten(rawUrl);
+            var shorted = new Shorten(new DefaultShortedUrlGenerator(), rawUrl);
             var totalClicks = shorted.TotalClicks;
 
             shorted.IncreaseClickCount();

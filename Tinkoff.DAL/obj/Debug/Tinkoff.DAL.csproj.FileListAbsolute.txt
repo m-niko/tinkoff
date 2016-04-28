@@ -9,3 +9,15 @@ C:\Users\Niko\Documents\Visual Studio 2015\Projects\Tinkoff\Tinkoff.DAL\obj\Debu
 C:\Users\Niko\Documents\Visual Studio 2015\Projects\Tinkoff\Tinkoff.DAL\obj\Debug\Tinkoff.DAL.pdb
 C:\Users\Niko\Documents\Visual Studio 2015\Projects\Tinkoff\Tinkoff.DAL\obj\Debug\Tinkoff.DAL.Migrations.Init.resources
 C:\Users\Niko\Documents\Visual Studio 2015\Projects\Tinkoff\Tinkoff.DAL\obj\Debug\Tinkoff.DAL.csproj.GenerateResource.Cache
+C:\Users\Niko\Source\Repos\tinkoff\Tinkoff.DAL\bin\Debug\Tinkoff.DAL.dll.config
+C:\Users\Niko\Source\Repos\tinkoff\Tinkoff.DAL\bin\Debug\Tinkoff.DAL.dll
+C:\Users\Niko\Source\Repos\tinkoff\Tinkoff.DAL\bin\Debug\Tinkoff.DAL.pdb
+C:\Users\Niko\Source\Repos\tinkoff\Tinkoff.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Niko\Source\Repos\tinkoff\Tinkoff.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Niko\Source\Repos\tinkoff\Tinkoff.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Niko\Source\Repos\tinkoff\Tinkoff.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Niko\Source\Repos\tinkoff\Tinkoff.DAL\obj\Debug\Tinkoff.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Niko\Source\Repos\tinkoff\Tinkoff.DAL\obj\Debug\Tinkoff.DAL.Migrations.Init.resources
+C:\Users\Niko\Source\Repos\tinkoff\Tinkoff.DAL\obj\Debug\Tinkoff.DAL.csproj.GenerateResource.Cache
+C:\Users\Niko\Source\Repos\tinkoff\Tinkoff.DAL\obj\Debug\Tinkoff.DAL.dll
+C:\Users\Niko\Source\Repos\tinkoff\Tinkoff.DAL\obj\Debug\Tinkoff.DAL.pdb
