@@ -1,0 +1,28 @@
+﻿<div class="row" ng-controller="ShortenListCtrl">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="page-header">
+            <h1>{{title}}</h1>
+        </div>
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <td>Create date</td>
+                <td>Original url</td>
+                <td>Shorted url</td>
+                <td>Total clicks</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="(key, item) in shortedList">
+                <td>{{item.CreateDate | date:'dd-MM-yyyy HH:mm'}}</td>
+                <td><a href="{{item.Url}}">{{item.RawUrl}}</a></td>
+                <td><a href="/{{item.ShortedUrl}}">{{item.ShortedUrl}}</a></td>
+                <td>{{item.TotalClicks}}</td>
+            </tr>
+            </tbody>
+        </table>
+        <div>
+            <a href="#/">Go back</a>
+        </div>
+    </div>
+</div>

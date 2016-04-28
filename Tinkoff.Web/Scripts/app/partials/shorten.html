@@ -1,0 +1,24 @@
+﻿<div class="row" ng-controller="ShortenCreateCtrl">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="page-header">
+            <h1>{{title}}</h1>
+        </div>
+        <form novalidate name="shortenForm" ng-submit="submit()">
+            <div class="input-group input-group-lg">
+                <input type="text" ng-model="shorten.rawUrl" name="rawUrl" class="form-control" placeholder="Paste a link to shorten it" required>
+                <span class="input-group-btn">
+                    <input class="btn btn-primary" type="submit" value="SHORTEN" ng-disabled="shortenForm.$invalid">
+                </span>
+            </div><!-- /input-group -->
+            <div class="alert alert-danger" role="alert" ng-show="shortenForm.rawUrl.$invalid && !shortenForm.rawUrl.$pristine">Url required</div>
+        </form>
+
+        <div class="panel panel-default shorted-smart">
+            <div class="panel-body" ng-show="shorted">
+                <p>{{shorted.RawUrl}} - <a href="/{{shorted.ShortedUrl}}">{{shorted.ShortedUrl}}</a>
+                </p>
+            </div>
+            <div class="panel-footer"><a href="#/allmyshortens">All my shorted url</a></div>
+        </div>
+    </div>
+</div>
